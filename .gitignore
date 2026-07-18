@@ -1,0 +1,31 @@
+# --- Instructor-only materials (never publish) ---
+# Exam papers and answer keys
+**/exam/
+# Instructor documentation (renamed from README.md)
+AGENTS.md
+**/AGENTS.md
+# Solution notebooks - release timing is the instructor's call
+*_solutions.ipynb
+
+# --- Local-only source materials (CV, reference presentations) ---
+local_sources_do_not_commit/
+
+# --- Python ---
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# --- LaTeX build artifacts ---
+*.aux
+*.log
+*.nav
+*.out
+*.snm
+*.toc
+*.vrb
+texput.log
+
+# --- Tooling / OS ---
+.claude/
+.DS_Store

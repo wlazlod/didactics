@@ -1,0 +1,13 @@
+[project]
+name = "data-mining-sgh"
+version = "0.1.0"
+description = "Data Mining course (SGH, SMMD-ADA) — notebooks and course materials"
+requires-python = ">=3.11"
+dependencies = [
+    "pandas>=2.0",
+    "numpy>=1.26",
+    "matplotlib>=3.9",
+    "scikit-learn>=1.4",
+    "jupyter>=1.0",
+    "mlxtend>=0.23",
+]
