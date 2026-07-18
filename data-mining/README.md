@@ -108,9 +108,13 @@ framing 10% · data prep & missingness 15% · modelling (≥2 families) 15% ·
 reproducibility 5% · **presentation & defence 20%**.
 
 **Use of AI:** assistants are allowed — but **you are responsible for every
-line you submit**. The stronger the impression that the project was produced
-solely by AI, the harder the questions at the defence. Expect to explain,
-justify, and modify any part of your code live.
+line you submit**. Every submission is read for the fingerprints of
+*unchecked* generation: conventions nobody in the team can explain, claims
+that don't match what the notebook actually computes, boilerplate that
+ignores the course's methods. The stronger the impression that the project
+was produced solely by AI, the harder the questions at the defence. Expect to
+explain, justify, and modify any part of your code live — **work you cannot
+explain is treated as work you did not do.**
 
 **Start from the template:** copy `project/project_template.ipynb` and fill
 it in — it has one section per rubric criterion, the leakage-audit table, and
