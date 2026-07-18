@@ -1,7 +1,12 @@
-# Data Mining — SGH Warsaw School of Economics (SMMD-ADA)
+# Data Mining — SGH Warsaw School of Economics
 
 **A finance-first, problem-driven Data Mining course.**
 Autumn semester · Tuesdays 17:10–20:30 · 7 blocks · taught in English.
+
+Programme: **SMMD-ADA** (Analiza danych – Big Data, full-time second-cycle;
+English-language equivalent **SMMD-AAB**). Also elective for **SMMD-EKO**
+(Economics; likewise **SMMD-QEM**) and **SMMD-MIS** (Quantitative Methods in
+Economics and Information Systems).
 
 This repository holds everything you need for the course: the slide decks, a
 102-page coursebook that goes deeper than the slides, and one hands-on Jupyter
