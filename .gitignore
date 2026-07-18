@@ -1,13 +1,10 @@
 # --- Instructor-only materials (never publish) ---
-# Exam papers and answer keys
 **/exam/
-# Instructor documentation (renamed from README.md)
-AGENTS.md
-**/AGENTS.md
+
 # Solution notebooks - release timing is the instructor's call
 *_solutions.ipynb
 
-# --- Local-only source materials (CV, reference presentations) ---
+# --- Local-only source materials (CV, reference materials) ---
 local_sources_do_not_commit/
 
 # --- Python ---
@@ -27,5 +24,6 @@ __pycache__/
 texput.log
 
 # --- Tooling / OS ---
+**/AGENTS.md
 .claude/
 .DS_Store
