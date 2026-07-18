@@ -35,6 +35,9 @@ data-mining/
 ├── prerequisites/
 │   └── 00_python_primer.ipynb   self-paced Python warm-up — start here if
 │                                your Python is rusty
+├── project/
+│   └── project_template.ipynb   START YOUR PROJECT FROM THIS — one section
+│                                per rubric criterion, with the checklists
 └── data/                      the course dataset (already included — the
                                notebooks load it automatically, offline)
 ```
@@ -109,8 +112,11 @@ line you submit**. The stronger the impression that the project was produced
 solely by AI, the harder the questions at the defence. Expect to explain,
 justify, and modify any part of your code live.
 
-**A sensible week-by-week plan** lives on the project slides in Block 1 —
-each week's class teaches exactly what that week's project step needs.
+**Start from the template:** copy `project/project_template.ipynb` and fill
+it in — it has one section per rubric criterion, the leakage-audit table, and
+the pre-upload checklist. **A sensible week-by-week plan** lives on the
+project slides in Block 1 — each week's class teaches exactly what that
+week's project step needs.
 
 ### The exam (term 0)
 
