@@ -3,10 +3,10 @@
 **A finance-first, problem-driven Data Mining course.**
 Autumn semester · Tuesdays 17:10–20:30 · 7 blocks · taught in English.
 
-Programme: **SMMD-ADA** (Analiza danych – Big Data, full-time second-cycle;
-English-language equivalent **SMMD-AAB**). Also elective for **SMMD-EKO**
-(Economics; likewise **SMMD-QEM**) and **SMMD-MIS** (Quantitative Methods in
-Economics and Information Systems).
+Programme: full-time Master's — **SMMD-ADA** (Analiza danych – Big Data) and
+**SMMD-AAB** (Advanced Analytics – Big Data). Also elective for **SMMD-EKO**
+(Ekonomia), **SMMD-QEM** (Economics), and **SMMD-MIS** (Metody ilościowe w
+ekonomii i systemy informacyjne).
 
 This repository holds everything you need for the course: the slide decks, a
 102-page coursebook that goes deeper than the slides, and one hands-on Jupyter
