@@ -1,0 +1,16 @@
+# Solution notebooks - release timing is the instructor's call
+*_solutions.ipynb
+
+# --- Local-only source materials (CV, reference materials) ---
+local_sources_do_not_commit/
+
+# --- Python ---
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# --- Tooling / OS ---
+**/AGENTS.md
+.claude/
+.DS_Store
