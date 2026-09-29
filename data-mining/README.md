@@ -55,16 +55,19 @@ written in exactly the exam's format.**
 
 ## Getting started
 
-You need Python 3.11+ and Jupyter. The recommended path uses
-[`uv`](https://docs.astral.sh/uv/):
+You need Python 3.11+ and Jupyter. First get the code: on this page, click
+the green **Code** button → **Download ZIP** and unpack it (no git needed;
+if you use git, clone the repository instead). The recommended environment
+uses [`uv`](https://docs.astral.sh/uv/); in a terminal, inside the
+`data-mining` folder:
 
 ```bash
-git clone <this-repo>
-cd didactics/data-mining
 uv sync                                   # creates the environment
-cd lecture_1
-uv run jupyter lab 01_eda_missingness.ipynb
+uv run jupyter lab                        # opens JupyterLab in your browser
 ```
+
+Step-by-step help for every route (uv, pip, Anaconda, Colab), with
+screenshots, is in the setup FAQ on MS Teams.
 
 Plain `pip` works too:
 
