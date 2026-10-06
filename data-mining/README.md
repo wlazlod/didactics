@@ -41,6 +41,7 @@ data-mining/
 ├── project/
 │   └── project_template.ipynb   START YOUR PROJECT FROM THIS — one section
 │                                per rubric criterion, with the checklists
+├── check_setup.py             checks your setup: uv run python check_setup.py
 └── data/                      the course dataset (already included — the
                                notebooks load it automatically, offline)
 ```
@@ -55,31 +56,30 @@ written in exactly the exam's format.**
 
 ## Getting started
 
-You need Python 3.11+ and Jupyter. First get the code: on this page, click
-the green **Code** button → **Download ZIP** and unpack it (no git needed;
-if you use git, clone the repository instead). The recommended environment
-uses [`uv`](https://docs.astral.sh/uv/); in a terminal, inside the
-`data-mining` folder:
+Follow the **setup guide** (`setup_guide.pdf` on MS Teams): eight steps with
+screenshots, a check after each, and a fix for every common problem. In
+short, install [git](https://git-scm.com/) and [`uv`](https://docs.astral.sh/uv/),
+then in a terminal:
 
 ```bash
+cd ~
+git clone https://github.com/wlazlod/didactics.git
+cd ~/didactics/data-mining
 uv sync                                   # creates the environment
+uv run python check_setup.py              # must end with "ALL GOOD"
 uv run jupyter lab                        # opens JupyterLab in your browser
 ```
 
-Step-by-step help for every route (uv, pip, Anaconda, Colab), with
-screenshots, is in the setup FAQ on MS Teams.
+Every next time: `cd ~/didactics/data-mining` and `uv run jupyter lab`.
+For updates during the semester, in the same folder: `git restore .`, `git pull`,
+`uv sync` (keep your own work in copies with your name; the guide explains).
 
-Plain `pip` works too:
-
-```bash
-pip install pandas numpy scikit-learn matplotlib jupyter mlxtend
-```
-
-**Google Colab:** the notebooks run there with one upload and one edit.
-Upload `lecture_1/finance_data.py` next to the notebook (it is the shared data
-loader) and change the `sys.path.append("../lecture_1")` line at the top to
+**Google Colab** (nothing to install): open the notebook from GitHub, add a
+cell with
+`!wget -q https://raw.githubusercontent.com/wlazlod/didactics/main/data-mining/lecture_1/finance_data.py`,
+and change the `sys.path.append("../lecture_1")` line at the top to
 `sys.path.append(".")`. The Taiwan portfolio (Blocks 2–4 and 6) is then
-downloaded from OpenML on first use, which Colab's internet access allows.
+downloaded from OpenML on first use. Details are in the setup guide.
 
 **Rule of thumb for every lab:** run cells top to bottom, and before you trust
 any result — *Kernel → Restart & Run All*.
