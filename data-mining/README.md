@@ -1,6 +1,6 @@
 # Data Mining — SGH Warsaw School of Economics
 
-**A finance-first, problem-driven Data Mining course.**
+**A problem-driven Data Mining course.**
 Autumn semester · Tuesdays 17:10–20:30 · 7 blocks · taught in English.
 
 Programme: full-time Master's — **SMMD-ADA** (Analiza danych – Big Data) and
@@ -34,7 +34,7 @@ is also online at [datadeer.pl](https://datadeer.pl/didactics/data-mining.html).
 ```
 data-mining/
 ├── lecture_1/ … lecture_6/    one folder per block:
-│   └── NN_<topic>.ipynb         the lab notebook (run it during/after class)
+│   └── NN_<topic>.ipynb         the lab notebook (run it during class, finish at home)
 ├── prerequisites/
 │   └── 00_python_primer.ipynb   self-paced Python warm-up — start here if
 │                                your Python is rusty
@@ -46,11 +46,16 @@ data-mining/
                                notebooks load it automatically, offline)
 ```
 
-Every deck ends with the same sequence: lab briefing, a "block in five
-sentences" summary, project status, **practice exam questions** (two
-multiple-choice, three in Block 2, and one open), and a
-short reading list. The practice questions are worth your time: **they are
-written in exactly the exam's format.**
+**From Block 2 on, the notebook runs during the lecture.** The slides stop at
+short *checkpoints* and you run the matching section of the notebook
+(Block 2 has six). Bring a laptop and update the course folder before
+class (see "Getting started" below).
+
+Every deck ends with the same sequence: a "block in five sentences" summary,
+project status, **practice exam questions** (two multiple-choice, three in
+Block 2, and one open), and a short reading list. The practice questions are
+worth your time: **they are written in exactly the exam's format.** The
+"Check yourself" slides inside the lecture practise the same skills.
 
 ---
 
@@ -79,7 +84,9 @@ cell with
 `!wget -q https://raw.githubusercontent.com/wlazlod/didactics/main/data-mining/lecture_1/finance_data.py`,
 and change the `sys.path.append("../lecture_1")` line at the top to
 `sys.path.append(".")`. The Taiwan portfolio (Blocks 2–4 and 6) is then
-downloaded from OpenML on first use. Details are in the setup guide.
+downloaded from OpenML on first use. Details are in the setup guide. If the
+first cell warns that your scikit-learn is older than 1.8, run
+`!pip install -q -U scikit-learn` and restart the session.
 
 **Rule of thumb for every lab:** run cells top to bottom, and before you trust
 any result — *Kernel → Restart & Run All*.
