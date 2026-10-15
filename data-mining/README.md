@@ -109,7 +109,7 @@ choice: business framing → data preparation → **at least two model families*
 | Deadline | What is due |
 |---|---|
 | **before Block 2** (13.10, 17:10) | teams of 3 formed and registered |
-| **before Block 3** (20.10, 17:10) | topic + a short written description (the decision, the dataset, the target, the planned two model families). No idea? **Consult before the deadline.** |
+| **before Block 4** (27.10, 17:10; moved from 20.10) | topic + a short written description (the decision, the dataset, the target, the planned two model families). No idea? **Consult before the deadline.** |
 | **before Block 7** (17.11, 17:10) | **upload all code + the final presentation** — what you upload is what you present |
 | **Block 7** (17.11) | presentation of results |
 
