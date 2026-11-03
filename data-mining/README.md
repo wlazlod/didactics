@@ -49,8 +49,8 @@ data-mining/
 **From Block 2 on, the notebook runs during the lecture.** The slides stop at
 short *checkpoints* and you run the matching section of the notebook
 (Block 2: six checkpoints; Block 3: six experiments; Block 4: five
-experiments). Bring a laptop and update the course folder before class (see
-"Getting started" below).
+experiments; Block 5: five experiments). Bring a laptop and update the course
+folder before class (see "Getting started" below).
 
 Every deck ends with the same sequence: a "block in five sentences" summary,
 project status, **practice exam questions** (two multiple-choice, three in
@@ -84,7 +84,7 @@ For updates during the semester, in the same folder: `git restore .`, `git pull`
 cell with
 `!wget -nv -O finance_data.py https://raw.githubusercontent.com/wlazlod/didactics/main/data-mining/lecture_1/finance_data.py`,
 and change the `sys.path.append("../lecture_1")` line at the top to
-`sys.path.append(".")` (the Block 3 and Block 4 notebooks need no such
+`sys.path.append(".")` (the Block 3, 4 and 5 notebooks need no such
 change: their setup cells already look in the current folder). Block 3 needs
 one more file in the same way:
 `!wget -nv -O block3_tools.py https://raw.githubusercontent.com/wlazlod/didactics/main/data-mining/lecture_3/block3_tools.py`.
@@ -92,6 +92,9 @@ Block 4 needs its own file:
 `!wget -nv -O block4_tools.py https://raw.githubusercontent.com/wlazlod/didactics/main/data-mining/lecture_4/block4_tools.py`.
 The Block 4 notebook's first code cell already runs its three lines on Colab
 (and does nothing on a laptop), so there you only run that cell.
+Block 5 needs its own file:
+`!wget -nv -O block5_tools.py https://raw.githubusercontent.com/wlazlod/didactics/main/data-mining/lecture_5/block5_tools.py`;
+the notebook's first code cell runs its two lines on Colab.
 The Taiwan data (Blocks 2-4 and 6) is then downloaded from OpenML on first
 use; to copy it from this repository instead, add
 `!mkdir -p ../data && wget -nv -O ../data/taiwan_credit.csv https://raw.githubusercontent.com/wlazlod/didactics/main/data-mining/data/taiwan_credit.csv`.
@@ -99,7 +102,7 @@ If wget prints an ERROR line, the file was not saved. Details are in the
 setup guide. Colab's scikit-learn may be older than the 1.9 the notebooks were
 tested with. Block 2's notebook needs 1.8 for Checkpoint 6 (the lasso): if its
 setup cell prints a WARNING, run `%pip install -q -U scikit-learn` in a new
-cell and restart the session. In Blocks 3 and 4, from 1.4 on a few numbers
+cell and restart the session. In Blocks 3, 4 and 5, from 1.4 on a few numbers
 may differ from the slides in the third decimal - that is fine, nothing to do;
 only below 1.4 does the setup cell print a WARNING, with the same fix.
 
