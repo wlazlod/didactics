@@ -49,14 +49,16 @@ data-mining/
 **From Block 2 on, the notebook runs during the lecture.** The slides stop at
 short *checkpoints* and you run the matching section of the notebook
 (Block 2: six checkpoints; Block 3: six experiments; Block 4: five
-experiments; Block 5: five experiments). Bring a laptop and update the course
-folder before class (see "Getting started" below).
+experiments; Block 5: five experiments; Block 6: five experiments). Bring a
+laptop and update the course folder before class (see "Getting started"
+below).
 
 Every deck ends with the same sequence: a "block in five sentences" summary,
 project status, **practice exam questions** (two multiple-choice, three in
 Block 2, and one open), and a short reading list. The practice questions are
-worth your time: **they are written in exactly the exam's format.** The
-"Check yourself" slides inside the lecture practise the same skills.
+worth your time: **they are written in exactly the exam's format.** In
+Blocks 2 and 3, "Check yourself" slides inside the lecture practise the same
+skills.
 
 ---
 
@@ -84,7 +86,7 @@ For updates during the semester, in the same folder: `git restore .`, `git pull`
 cell with
 `!wget -nv -O finance_data.py https://raw.githubusercontent.com/wlazlod/didactics/main/data-mining/lecture_1/finance_data.py`,
 and change the `sys.path.append("../lecture_1")` line at the top to
-`sys.path.append(".")` (the Block 3, 4 and 5 notebooks need no such
+`sys.path.append(".")` (the Block 3, 4, 5 and 6 notebooks need no such
 change: their setup cells already look in the current folder). Block 3 needs
 one more file in the same way:
 `!wget -nv -O block3_tools.py https://raw.githubusercontent.com/wlazlod/didactics/main/data-mining/lecture_3/block3_tools.py`.
@@ -95,6 +97,9 @@ The Block 4 notebook's first code cell already runs its three lines on Colab
 Block 5 needs its own file:
 `!wget -nv -O block5_tools.py https://raw.githubusercontent.com/wlazlod/didactics/main/data-mining/lecture_5/block5_tools.py`;
 the notebook's first code cell runs its two lines on Colab.
+Block 6 needs `block3_tools.py` (line above) and its own file:
+`!wget -nv -O block6_tools.py https://raw.githubusercontent.com/wlazlod/didactics/main/data-mining/lecture_6/block6_tools.py`;
+the notebook's first code cell runs its four lines on Colab (with the course data).
 The Taiwan data (Blocks 2-4 and 6) is then downloaded from OpenML on first
 use; to copy it from this repository instead, add
 `!mkdir -p ../data && wget -nv -O ../data/taiwan_credit.csv https://raw.githubusercontent.com/wlazlod/didactics/main/data-mining/data/taiwan_credit.csv`.
@@ -102,7 +107,7 @@ If wget prints an ERROR line, the file was not saved. Details are in the
 setup guide. Colab's scikit-learn may be older than the 1.9 the notebooks were
 tested with. Block 2's notebook needs 1.8 for Checkpoint 6 (the lasso): if its
 setup cell prints a WARNING, run `%pip install -q -U scikit-learn` in a new
-cell and restart the session. In Blocks 3, 4 and 5, from 1.4 on a few numbers
+cell and restart the session. In Blocks 3, 4, 5 and 6, from 1.4 on a few numbers
 may differ from the slides in the third decimal - that is fine, nothing to do;
 only below 1.4 does the setup cell print a WARNING, with the same fix.
 
@@ -128,8 +133,8 @@ choice: business framing → data preparation → **at least two model families*
 |---|---|
 | **before Block 2** (13.10, 17:10) | teams of 3 formed and registered |
 | **before Block 4** (27.10, 17:10; moved from 20.10) | topic + a short written description: the problem you want to solve and why; the dataset (what it is, a link if it comes from the internet, one dataset or several, the number of rows and of columns); the target variable you will model. Model choices come later. No idea? **Consult before the deadline.** |
-| **before Block 7** (17.11, 17:10) | **upload all code + the final presentation** — what you upload is what you present |
-| **Block 7** (17.11) | presentation of results |
+| **Sunday 15.11, 23:59** (moved from 17.11, 17:10) | **upload on Teams** (one person per team): the notebook after Kernel → Restart & Run All, with its outputs; the data it reads (or how to get them); any .py files it imports; the presentation as a PDF — what you upload is what you present |
+| **Block 7** (17.11, from 17:10) | defences: 6-8 minutes + questions; each team signs up for a slot in the file on Teams |
 
 **Data:** your choice — any real dataset that can carry the full cycle: a
 meaningful business decision, a predictable target, enough rows for an honest
@@ -158,7 +163,7 @@ week's project step needs.
 
 ### The exam (term 0)
 
-Second part of Block 7, **120 minutes**: ~40% multiple choice, ~60% short
+Block 7, after the defences (it starts at 19:00 at the latest), **120 minutes**: ~40% multiple choice, ~60% short
 open questions. It tests *selecting the right method for a described problem*
 and *interpreting a given result* — not derivations. Best study kit: the six
 "Block N in five sentences" slides, the worked-example slides, and the
